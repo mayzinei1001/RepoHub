@@ -1,0 +1,37 @@
+.menu-icon{
+     width: 50px;
+     height: 10px;
+     /* background: pink; */
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-content: center
+}
+
+.menu-icon span{
+     width: 20px;
+     height: 2px;
+     background: black;
+     position: absolute;
+     transition: 0.2s;
+}
+
+.menu-icon span:nth-child(1){
+     transform: translateY(0);
+}
+
+.menu-icon span:nth-child(2){
+     transform: translateY(10px);
+}
+
+.menu-icon.show span:nth-child(1){
+     transform: rotate(40deg);
+}
+
+.menu-icon.show span:nth-child(2){
+     transform: rotate(-40deg);
+}
+
+.z-1000{
+     z-index: 2000;
+}
